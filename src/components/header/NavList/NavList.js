@@ -8,7 +8,7 @@ const NavList = () => {
 				{[
 					['Home', '/'],
 					['About Us', '/#about'],
-					['Properties', '/properties'],
+					['Properties', '/#properties'],
 					['Contact', '/#contact'],
 				].map(([list, url], index) => (
 					<li key={index} className="">

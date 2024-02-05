@@ -1,12 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
+import { dataProperties } from './dataProperties';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import AboutUs from './components/about-us/About';
+import Properties from './components/properties/Properties';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 
 function App() {
-	// const firstThreeProjects = projects.slice(0, 3);
+	const firstThreeProps = dataProperties.slice(0, 3);
 
 	return (
 		<div className="App">
@@ -18,12 +20,15 @@ function App() {
 						<>
 							<Home />
 							<AboutUs />
-							{/* <Properties projects={firstThreeProjects} root={'root'} /> */}
+							<Properties properties={firstThreeProps} root={'root'} />
 							<Contact />
 						</>
 					}
 				/>
-				{/* <Route path="/properities" element={<Projects projects={projects} />} /> */}
+				<Route
+					path="/properties"
+					element={<Properties properties={dataProperties} />}
+				/>
 			</Routes>
 			<Footer />
 		</div>
