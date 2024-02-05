@@ -26,7 +26,7 @@ const Contact = () => {
 					placeholder={'Name'}
 				/>
 				<div className="w-100 flex-row between">
-					<input type="number" placeholder="+91" />
+					<input type="text" placeholder="+91" />
 					<Input
 						type={'number'}
 						value={number}

@@ -34,6 +34,15 @@
     gap: 20px;
 } 
 
+.contact-container form div{
+   gap: 10px;
+} 
+
+.contact-container form div :first-child{
+    width: 20%;
+    height: 40px;
+ } 
+
 .contact-container form button{
     border: none;
     outline: none;
