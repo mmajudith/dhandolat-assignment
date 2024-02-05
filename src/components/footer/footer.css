@@ -1,0 +1,72 @@
+footer{
+    width: 100%;
+    margin: auto;
+    background: rgba(44, 16, 81, 1);
+    box-shadow: 18px 11px 48px 0px rgba(0, 0, 0, 0.53);
+}
+
+footer .footer-nav-container{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0px;
+    color: #e5e2ea;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+
+footer .footer-nav-container .logo{
+    font-size: 40px;
+    color: rgba(255, 193, 7, 1);
+}
+
+footer .footer-nav-container .reach-out-wrapper,.footer-lists{
+    gap: 20px;
+}
+
+footer .footer-nav-container .reach-out-wrapper li{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .footer-nav-container .reach-out-wrapper li svg{
+    width: 35px;
+    height: 35px;
+}
+
+.whatapp-reach-out-container .whatapp-wrapper{
+    height: 76px;
+    margin-top: 10px;
+    border-radius: 29px; 
+    background: rgba(150, 150, 150, 0.25);
+    box-shadow: 5px 8px 7px 0px rgba(0, 0, 0, 0.25);
+    gap: 20px;
+}
+
+.whatapp-reach-out-container .whatapp-wrapper img{
+   width: 45px;
+   height: 45px;
+}
+
+.whatapp-reach-out-container .whatapp-wrapper p{
+   color: rgba(137, 228, 214, 1);
+ }
+
+.copy-right-container{
+    width: 100%;
+    text-align: center;
+    padding: 40px 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.57);
+    color: rgba(255, 255, 255, 0.57);
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0em;
+}
+
+.copy-right-container p span{
+    color: rgba(255, 193, 7, 1);
+}

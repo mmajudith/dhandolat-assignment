@@ -1,0 +1,26 @@
+.about-container{
+    background: rgba(255, 255, 255, 1);
+    padding: 75px 5%;
+}
+
+.about-container h2{
+    color: rgba(101, 44, 178, 1);
+    font-size: 58px;
+    line-height: 75px;
+    letter-spacing: 0em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-container h2 span{
+    color: rgba(0, 0, 0, 1);
+}
+
+.about-container p{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 33px;
+    letter-spacing: 0em;
+    color: rgba(0, 0, 0, 1);
+    text-align: justify;
+}

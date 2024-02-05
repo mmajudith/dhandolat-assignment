@@ -1,0 +1,14 @@
+.header-nav-list ul{
+    gap: 15px;
+}
+
+.header-nav-list ul li a{
+    color:rgba(255, 255, 255, 1);
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+}
+
+.header-nav-list ul li a:active{
+    color: rgba(255, 193, 7, 1);
+}
