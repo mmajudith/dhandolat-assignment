@@ -1,0 +1,63 @@
+.properties-container{
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 180px;
+}
+
+.properties-container .link-width{
+    width: 92%;
+}
+
+.properties-container .link-width a{
+    gap: 10px;
+}
+
+.properties-container .link-width a p{
+    font-size: 40px;
+    letter-spacing: 0em;
+    color: rgba(255, 193, 7, 1);
+}
+
+.properties-container div .filter-props-wrapper{
+    position: relative;
+}
+
+.properties-container div .filter-props-wrapper :first-child{
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.properties-container .p-relative{
+    position: relative;
+    margin-top: 60px;
+}
+
+.properties-container .p-relative .properities-wrapper{
+    width: 92%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    gap: 15px;
+}
+
+.properties-container .p-relative .front-arrow-wrapper{
+    width: fit-content;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    right: 1.3%;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

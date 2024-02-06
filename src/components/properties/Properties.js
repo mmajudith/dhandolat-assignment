@@ -15,30 +15,31 @@ const Properties = ({ properties, root }) => {
 	};
 
 	return (
-		<div id="properties" className="properties-container">
-			<div>
-				<div>
-					<HashLink to={'/#properties'}>
-						<BackArrow />
-						<p>PROPERTIES</p>
-					</HashLink>
-				</div>
+		<div id="properties" className="properties-container w-100 m-auto">
+			<div
+				className={`link-width m-auto flex-row ${!root ? `between` : `center`}`}
+			>
+				<HashLink to={'/#properties'} className="flex-row center">
+					<BackArrow />
+					<p>PROPERTIES</p>
+				</HashLink>
+
 				{!root && (
-					<div>
+					<div className="filter-props-wrapper">
 						<p onClick={handleDropDown}>FILTER</p>
 						{isdropDown && <FilterProps />}
 					</div>
 				)}
 			</div>
 
-			<div>
-				<div>
+			<div className="p-relative w-100 m-auto">
+				<div className="properities-wrapper">
 					{properties.map((property, index) => (
 						<Property key={index} property={property} />
 					))}
 				</div>
 				{root && (
-					<div>
+					<div className="front-arrow-wrapper">
 						<Link to={'/properties'}>
 							<FrontArrow />
 						</Link>

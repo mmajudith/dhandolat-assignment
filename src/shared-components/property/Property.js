@@ -5,34 +5,34 @@ const Property = ({ property }) => {
 		property;
 
 	return (
-		<div>
-			<div>
+		<div className="property-container">
+			<div className="building-wrapper flex-col center">
 				<img src={image} alt="building property" />
 				<p>{name}</p>
 			</div>
 
-			<div>
-				<div>
-					<>
+			<div className="property-description flex-col between">
+				<div className="w-100 flex-row flex-start">
+					<div>
 						<p>{minInVestment}</p>
 						<p>MIN INVESTMENT</p>
-					</>
-					<>
+					</div>
+					<div>
 						<p>{minArea}</p>
 						<p>MIN AREA</p>
-					</>
+					</div>
 				</div>
-				<div>
-					<>
+				<div className="w-100 flex-row flex-start">
+					<div>
 						<p>{rentalYield}</p>
 						<p>RENTAL YIELD</p>
-					</>
-					<>
+					</div>
+					<div>
 						<p>{location}</p>
 						<p>LOCATION</p>
-					</>
+					</div>
 				</div>
-				<p>CONTACT</p>
+				<p className="">CONTACT</p>
 			</div>
 		</div>
 	);
