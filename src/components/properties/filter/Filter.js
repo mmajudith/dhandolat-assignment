@@ -1,30 +1,31 @@
-import { ReactComponent as DownArrow } from '../../../assets/down-arrow-icon.svg';
+import DownArrow from '../../../assets/down-arrow-icon.svg';
+import './filter.css';
 
 const FilterProps = () => {
 	return (
-		<div>
+		<div className="filter-prop-container">
 			{[['MIN INVESTMENT'], ['AREA']].map(([list], index) => (
-				<div key={index} className="">
+				<div key={index} className="area-invest-wrapper w-100 m-auto">
 					<p>{list}</p>
-					<div>
+					<div className="flex-row between">
 						<p>Low to High</p>
-						<DownArrow />
+						<img src={DownArrow} alt="down arrow icon" />
 					</div>
 				</div>
 			))}
 
-			<div>
+			<div className="location-wrapper w-100 m-auto">
 				<p>LOCATION</p>
-				<ul>
+				<ul className="w-100 flex-row between">
 					{[['Noida'], ['Noida'], ['Noida']].map(([location], index) => (
-						<li key={index} className="">
+						<li key={index} className="flex-col center">
 							{location}
 						</li>
 					))}
 				</ul>
 			</div>
 
-			<p>DONE</p>
+			<p className="done">DONE</p>
 		</div>
 	);
 };

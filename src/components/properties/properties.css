@@ -22,7 +22,7 @@
     position: relative;
 }
 
-.properties-container div .filter-props-wrapper :first-child{
+.properties-container div .filter-props-wrapper .filter{
     font-size: 24px;
     font-weight: 300;
     letter-spacing: 0em;
@@ -45,7 +45,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 .properties-container .p-relative .front-arrow-wrapper{

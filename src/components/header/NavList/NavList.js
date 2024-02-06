@@ -11,13 +11,13 @@ const NavList = () => {
 					['Properties', '/#properties'],
 					['Contact', '/#contact'],
 				].map(([list, url], index) => (
-					<li key={index} className="">
+					<li key={index}>
 						<HashLink
+							// activeStyle={{ color: 'rgba(255, 193, 7, 1)' }}
 							scroll={(element) =>
 								element.scrollIntoView({ behavior: 'smooth' })
 							}
 							to={url}
-							className=""
 						>
 							{list}
 						</HashLink>

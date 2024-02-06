@@ -26,7 +26,9 @@ const Properties = ({ properties, root }) => {
 
 				{!root && (
 					<div className="filter-props-wrapper">
-						<p onClick={handleDropDown}>FILTER</p>
+						<p onClick={handleDropDown} className="filter">
+							FILTER
+						</p>
 						{isdropDown && <FilterProps />}
 					</div>
 				)}

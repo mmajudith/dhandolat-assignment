@@ -9,6 +9,6 @@
     letter-spacing: 0em;
 }
 
-.header-nav-list ul li a:active{
-    color: rgba(255, 193, 7, 1);
+.header-nav-list ul li a:hover{
+    color: rgba(137, 228, 214, 1);
 }
