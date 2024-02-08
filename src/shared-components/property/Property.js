@@ -6,7 +6,7 @@ const Property = ({ property }) => {
 
 	return (
 		<div className="property-container">
-			<div className="building-wrapper flex-col center">
+			<div className="building-wrapper">
 				<img src={image} alt="building property" />
 				<p>{name}</p>
 			</div>

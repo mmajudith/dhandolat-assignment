@@ -24,7 +24,7 @@
 .filter-prop-container .area-invest-wrapper  div{
     width: 100%;
     height: 34px;
-     margin-top: 5px;
+    margin-top: 5px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.96);
     font-size: 15px;
@@ -59,4 +59,25 @@
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.96);  
     color: rgba(144, 144, 144, 1);
+}
+
+@media screen and (max-width: 1024px) {
+    .filter-prop-container{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .filter-prop-container .area-invest-wrapper,.location-wrapper > p{
+        font-size: 18px;
+    }
+    .filter-prop-container .area-invest-wrapper  div{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .filter-prop-container{
+        width: 100%;
+    }
 }

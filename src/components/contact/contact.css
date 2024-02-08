@@ -41,6 +41,7 @@
 .contact-container form div :first-child{
     width: 20%;
     height: 40px;
+    padding-left: 5px;
  } 
 
 .contact-container form button{
@@ -54,3 +55,20 @@
     align-self: flex-end;
     cursor: pointer;
 } 
+
+@media screen and (max-width: 640px) {
+    .contact-container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-container .connect{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .contact-container .fill{
+        font-size: 15px;
+    }
+}

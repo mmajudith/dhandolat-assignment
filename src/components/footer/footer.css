@@ -54,7 +54,7 @@ footer .footer-nav-container .reach-out-wrapper li svg{
 
 .whatapp-reach-out-container .whatapp-wrapper p{
    color: rgba(137, 228, 214, 1);
- }
+}
 
 .copy-right-container{
     width: 100%;
@@ -69,4 +69,42 @@ footer .footer-nav-container .reach-out-wrapper li svg{
 
 .copy-right-container p span{
     color: rgba(255, 193, 7, 1);
+}
+
+@media screen and (max-width: 1024px) {
+    footer .footer-nav-container{
+        width: 90%;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer .footer-nav-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    footer .footer-nav-container .footer-lists{
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-nav-container .reach-out-wrapper li{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whatapp-reach-out-container{
+        text-align: center;
+    }
+
+    .whatapp-reach-out-container .whatapp-wrapper{
+        height: 66px;
+    }
+
+    .copy-right-container{
+        font-size: 13px;
+        padding: 40px 10px;
+    }
 }

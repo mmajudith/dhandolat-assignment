@@ -15,7 +15,7 @@ const strategies = [
 const Home = () => {
 	return (
 		<div className="home-container w-90 m-auto flex-row between">
-			<div className="discover-container flex-col ">
+			<div className="discover-container flex-col">
 				<div className="discover-wrapper w-100 flex-col center">
 					<h1>DISCOVER </h1>
 					<p>Investment Opportunities</p>
