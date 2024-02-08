@@ -6,3 +6,34 @@ header .logo{
     font-size: 20px;
     letter-spacing: 0em;
 }
+
+header .logo-menu-wrapper {
+    width: fit-content;
+    height: fit-content;
+}
+
+header .logo-menu-wrapper .menu-icon-wrapper{
+    width: fit-content;
+    height: fit-content;
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    header{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    header .logo-menu-wrapper{
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo-menu-wrapper .menu-icon-wrapper{
+        display: block;
+        cursor: pointer;
+    }
+}

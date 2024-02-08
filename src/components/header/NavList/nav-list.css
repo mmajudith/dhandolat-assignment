@@ -16,3 +16,12 @@
 .header-nav-list ul li .activeClassName{
     color: rgba(255, 193, 7, 1)
 }
+
+@media screen and (max-width: 640px) {
+    .header-nav-list ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
