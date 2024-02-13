@@ -1,14 +1,23 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import NavList from './NavList/NavList';
 import { ReactComponent as HamMenuIcon } from '../../assets/hamburger-menu.svg';
 import './header.css';
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
 	const handleIsOpen = () => {
 		setIsOpen(!isOpen);
 	};
+
+	useEffect(() => {
+		window.addEventListener('resize', () => setScreenWidth(window.innerWidth));
+
+		return window.addEventListener('resize', () =>
+			setScreenWidth(window.innerWidth)
+		);
+	}, [screenWidth]);
 
 	return (
 		<header className="w-90 m-auto flex-row between">
@@ -20,8 +29,8 @@ const Header = () => {
 				</div>
 			</div>
 
-			{/* {isOpen } */}
-			<NavList />
+			{screenWidth > 640 && <NavList />}
+			{screenWidth < 640 && isOpen && <NavList />}
 		</header>
 	);
 };
